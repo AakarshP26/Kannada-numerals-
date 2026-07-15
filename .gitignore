@@ -32,3 +32,6 @@ paper/
 *.log
 tmp/
 analysis/outputs*/
+
+# Generated figures are tracked (exception to the global *.pdf rule)
+!figures/*.pdf
