@@ -122,10 +122,18 @@ def sift_descriptors(binary_img):
 
 
 def bovw_encode(descriptors, kmeans):
-    """Normalized histogram of codebook assignments."""
-    k = kmeans.n_clusters
+    """Normalized histogram of codebook assignments.
+
+    Assignment is computed directly against ``kmeans.cluster_centers_``
+    (argmin of squared euclidean distance), which is equivalent to
+    ``kmeans.predict`` but avoids per-call validation overhead.
+    """
+    centers = kmeans.cluster_centers_
+    k = len(centers)
     if len(descriptors) == 0:
         return np.zeros(k)
-    words = kmeans.predict(descriptors.astype(np.float64))
+    D = descriptors.astype(np.float64)
+    d2 = (D * D).sum(1)[:, None] - 2 * D @ centers.T + (centers * centers).sum(1)[None]
+    words = np.argmin(d2, axis=1)
     hist = np.bincount(words, minlength=k).astype(float)
     return hist / hist.sum()

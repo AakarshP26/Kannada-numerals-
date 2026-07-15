@@ -1,0 +1,200 @@
+{
+ "set": "test",
+ "n": 10000,
+ "accuracy": {
+  "knn": {
+   "acc": 0.7996,
+   "wilson95": [
+    0.7916398872917876,
+    0.8073300208845029
+   ]
+  },
+  "linear_svm": {
+   "acc": 0.7544,
+   "wilson95": [
+    0.745866849531625,
+    0.7627377720973747
+   ]
+  },
+  "logreg": {
+   "acc": 0.7785,
+   "wilson95": [
+    0.7702550436763608,
+    0.7865310692311723
+   ]
+  },
+  "naive_bayes": {
+   "acc": 0.4305,
+   "wilson95": [
+    0.4208238276495696,
+    0.4402295481239543
+   ]
+  },
+  "random_forest": {
+   "acc": 0.8084,
+   "wilson95": [
+    0.8005685134416409,
+    0.8159946363633257
+   ]
+  },
+  "rbf_svm": {
+   "acc": 0.8654,
+   "wilson95": [
+    0.8585702244974365,
+    0.871949149493273
+   ]
+  }
+ },
+ "pairwise": {
+  "knn|linear_svm": {
+   "only_a_correct": 1166,
+   "only_b_correct": 714,
+   "mcnemar_chi2": 108.19202127659574,
+   "p": 2.4395976464474536e-25,
+   "acc_diff_boot95": [
+    0.03679750077426434,
+    0.05330250067636367
+   ]
+  },
+  "knn|logreg": {
+   "only_a_correct": 963,
+   "only_b_correct": 752,
+   "mcnemar_chi2": 25.714285714285715,
+   "p": 3.9588567659560415e-07,
+   "acc_diff_boot95": [
+    0.013000000268220901,
+    0.02889999933540821
+   ]
+  },
+  "knn|naive_bayes": {
+   "only_a_correct": 4022,
+   "only_b_correct": 331,
+   "mcnemar_chi2": 3127.9807029634735,
+   "p": 0.0,
+   "acc_diff_boot95": [
+    0.35839998722076416,
+    0.3797000050544739
+   ]
+  },
+  "knn|random_forest": {
+   "only_a_correct": 616,
+   "only_b_correct": 704,
+   "mcnemar_chi2": 5.734090909090909,
+   "p": 0.016638678549945708,
+   "acc_diff_boot95": [
+    -0.015799999237060547,
+    -0.0017999999690800905
+   ]
+  },
+  "knn|rbf_svm": {
+   "only_a_correct": 311,
+   "only_b_correct": 969,
+   "mcnemar_chi2": 337.22578125,
+   "p": 2.564798590138945e-75,
+   "acc_diff_boot95": [
+    -0.07280000299215317,
+    -0.05909999832510948
+   ]
+  },
+  "linear_svm|logreg": {
+   "only_a_correct": 298,
+   "only_b_correct": 539,
+   "mcnemar_chi2": 68.81720430107526,
+   "p": 1.0802617525787263e-16,
+   "acc_diff_boot95": [
+    -0.029600000008940697,
+    -0.01860000006854534
+   ]
+  },
+  "linear_svm|naive_bayes": {
+   "only_a_correct": 3597,
+   "only_b_correct": 358,
+   "mcnemar_chi2": 2650.9845764854613,
+   "p": 0.0,
+   "acc_diff_boot95": [
+    0.31349998712539673,
+    0.3343999981880188
+   ]
+  },
+  "linear_svm|random_forest": {
+   "only_a_correct": 567,
+   "only_b_correct": 1107,
+   "mcnemar_chi2": 173.5489844683393,
+   "p": 1.2418767816322426e-39,
+   "acc_diff_boot95": [
+    -0.061799999326467514,
+    -0.04610000178217888
+   ]
+  },
+  "linear_svm|rbf_svm": {
+   "only_a_correct": 332,
+   "only_b_correct": 1442,
+   "mcnemar_chi2": 693.2812852311162,
+   "p": 8.64455897477923e-153,
+   "acc_diff_boot95": [
+    -0.11890000104904175,
+    -0.10320000350475311
+   ]
+  },
+  "logreg|naive_bayes": {
+   "only_a_correct": 3811,
+   "only_b_correct": 331,
+   "mcnemar_chi2": 2922.124818928054,
+   "p": 0.0,
+   "acc_diff_boot95": [
+    0.3375000059604645,
+    0.358599990606308
+   ]
+  },
+  "logreg|random_forest": {
+   "only_a_correct": 561,
+   "only_b_correct": 860,
+   "mcnemar_chi2": 62.49401829697396,
+   "p": 2.6725513769212007e-15,
+   "acc_diff_boot95": [
+    -0.03720000013709068,
+    -0.02250000089406967
+   ]
+  },
+  "logreg|rbf_svm": {
+   "only_a_correct": 305,
+   "only_b_correct": 1174,
+   "mcnemar_chi2": 509.4144692359703,
+   "p": 8.50373142294089e-113,
+   "acc_diff_boot95": [
+    -0.094200000166893,
+    -0.0794999971985817
+   ]
+  },
+  "naive_bayes|random_forest": {
+   "only_a_correct": 275,
+   "only_b_correct": 4054,
+   "mcnemar_chi2": 3297.131901131901,
+   "p": 0.0,
+   "acc_diff_boot95": [
+    -0.3882000148296356,
+    -0.36739999055862427
+   ]
+  },
+  "naive_bayes|rbf_svm": {
+   "only_a_correct": 233,
+   "only_b_correct": 4582,
+   "mcnemar_chi2": 3926.293665628245,
+   "p": 0.0,
+   "acc_diff_boot95": [
+    -0.44530001282691956,
+    -0.4243975013494492
+   ]
+  },
+  "random_forest|rbf_svm": {
+   "only_a_correct": 309,
+   "only_b_correct": 879,
+   "mcnemar_chi2": 272.5260942760943,
+   "p": 3.1942384138040406e-61,
+   "acc_diff_boot95": [
+    -0.06379999965429306,
+    -0.05050000175833702
+   ]
+  }
+ }
+}

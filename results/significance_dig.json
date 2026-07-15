@@ -1,0 +1,200 @@
+{
+ "set": "dig",
+ "n": 10240,
+ "accuracy": {
+  "knn": {
+   "acc": 0.61474609375,
+   "wilson95": [
+    0.6052789046837528,
+    0.6241272228365515
+   ]
+  },
+  "linear_svm": {
+   "acc": 0.55546875,
+   "wilson95": [
+    0.545825211472983,
+    0.5650706867666192
+   ]
+  },
+  "logreg": {
+   "acc": 0.54091796875,
+   "wilson95": [
+    0.5312526076840721,
+    0.5505526411933811
+   ]
+  },
+  "naive_bayes": {
+   "acc": 0.40302734375,
+   "wilson95": [
+    0.39356500530618665,
+    0.4125624120319733
+   ]
+  },
+  "random_forest": {
+   "acc": 0.57470703125,
+   "wilson95": [
+    0.5651051822039644,
+    0.5842528497560634
+   ]
+  },
+  "rbf_svm": {
+   "acc": 0.66435546875,
+   "wilson95": [
+    0.6551491959374103,
+    0.6734384743746511
+   ]
+  }
+ },
+ "pairwise": {
+  "knn|linear_svm": {
+   "only_a_correct": 1539,
+   "only_b_correct": 932,
+   "mcnemar_chi2": 148.61837312828814,
+   "p": 3.4750376677653248e-34,
+   "acc_diff_boot95": [
+    0.0498046875,
+    0.06904296576976776
+   ]
+  },
+  "knn|logreg": {
+   "only_a_correct": 1568,
+   "only_b_correct": 812,
+   "mcnemar_chi2": 239.5063025210084,
+   "p": 5.0391126101712826e-54,
+   "acc_diff_boot95": [
+    0.06455077975988388,
+    0.0828149443492293
+   ]
+  },
+  "knn|naive_bayes": {
+   "only_a_correct": 2669,
+   "only_b_correct": 501,
+   "mcnemar_chi2": 1481.3529968454259,
+   "p": 0.0,
+   "acc_diff_boot95": [
+    0.20166015625,
+    0.2216796875
+   ]
+  },
+  "knn|random_forest": {
+   "only_a_correct": 1010,
+   "only_b_correct": 600,
+   "mcnemar_chi2": 103.90124223602484,
+   "p": 2.1265609332478005e-24,
+   "acc_diff_boot95": [
+    0.03242187574505806,
+    0.04775390774011612
+   ]
+  },
+  "knn|rbf_svm": {
+   "only_a_correct": 587,
+   "only_b_correct": 1095,
+   "mcnemar_chi2": 152.82342449464923,
+   "p": 4.1866182702004716e-35,
+   "acc_diff_boot95": [
+    -0.05742187425494194,
+    -0.04189453274011612
+   ]
+  },
+  "linear_svm|logreg": {
+   "only_a_correct": 745,
+   "only_b_correct": 596,
+   "mcnemar_chi2": 16.33407904548844,
+   "p": 5.310038287410271e-05,
+   "acc_diff_boot95": [
+    0.007519531063735485,
+    0.02138671837747097
+   ]
+  },
+  "linear_svm|naive_bayes": {
+   "only_a_correct": 2403,
+   "only_b_correct": 842,
+   "mcnemar_chi2": 749.9537750385208,
+   "p": 4.106317686746725e-165,
+   "acc_diff_boot95": [
+    0.14189453423023224,
+    0.16298827528953552
+   ]
+  },
+  "linear_svm|random_forest": {
+   "only_a_correct": 948,
+   "only_b_correct": 1145,
+   "mcnemar_chi2": 18.354515050167223,
+   "p": 1.8338388807512536e-05,
+   "acc_diff_boot95": [
+    -0.02792968787252903,
+    -0.010642089485190845
+   ]
+  },
+  "linear_svm|rbf_svm": {
+   "only_a_correct": 624,
+   "only_b_correct": 1739,
+   "mcnemar_chi2": 525.1781633516716,
+   "p": 3.1620920236269446e-116,
+   "acc_diff_boot95": [
+    -0.1181640625,
+    -0.09990234673023224
+   ]
+  },
+  "logreg|naive_bayes": {
+   "only_a_correct": 2212,
+   "only_b_correct": 800,
+   "mcnemar_chi2": 660.996347941567,
+   "p": 9.070949172479506e-146,
+   "acc_diff_boot95": [
+    0.12773437798023224,
+    0.1478539980947971
+   ]
+  },
+  "logreg|random_forest": {
+   "only_a_correct": 856,
+   "only_b_correct": 1202,
+   "mcnemar_chi2": 57.83527696793003,
+   "p": 2.850122561787766e-14,
+   "acc_diff_boot95": [
+    -0.042189942114055155,
+    -0.02519531175494194
+   ]
+  },
+  "logreg|rbf_svm": {
+   "only_a_correct": 492,
+   "only_b_correct": 1756,
+   "mcnemar_chi2": 709.5947508896797,
+   "p": 2.4506575308752316e-156,
+   "acc_diff_boot95": [
+    -0.13232421875,
+    -0.11494140326976776
+   ]
+  },
+  "naive_bayes|random_forest": {
+   "only_a_correct": 541,
+   "only_b_correct": 2299,
+   "mcnemar_chi2": 1086.9890845070422,
+   "p": 2.2220212123874696e-238,
+   "acc_diff_boot95": [
+    -0.18134765326976776,
+    -0.16201171278953552
+   ]
+  },
+  "naive_bayes|rbf_svm": {
+   "only_a_correct": 486,
+   "only_b_correct": 3162,
+   "mcnemar_chi2": 1961.5200109649122,
+   "p": 0.0,
+   "acc_diff_boot95": [
+    -0.2718749940395355,
+    -0.2508789002895355
+   ]
+  },
+  "random_forest|rbf_svm": {
+   "only_a_correct": 444,
+   "only_b_correct": 1362,
+   "mcnemar_chi2": 465.6085271317829,
+   "p": 2.893308737424798e-103,
+   "acc_diff_boot95": [
+    -0.09775390475988388,
+    -0.08193359524011612
+   ]
+  }
+ }
+}

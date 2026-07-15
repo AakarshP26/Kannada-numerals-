@@ -1,0 +1,57 @@
+{
+ "protocol": {
+  "train": "official Kannada-MNIST train (60,000)",
+  "test": "official Kannada-MNIST test (10,000, writer-disjoint)",
+  "dig": "Dig-MNIST (10,240, out-of-distribution)",
+  "augmentation": "x2: original + (-10 deg) rotation",
+  "svm": {
+   "C": 10,
+   "gamma": "scale",
+   "selected_by": "5-fold CV grid search, 4x5 grid, stratified 20k subsample, per-fold standardization"
+  }
+ },
+ "ktsd": {
+  "plain": {
+   "test": 0.8654,
+   "dig": 0.6644
+  },
+  "augmented": {
+   "test": 0.867,
+   "dig": 0.7011
+  },
+  "pooled_8020_repro": {
+   "without_custom": 0.941,
+   "with_custom_60250": 0.9414,
+   "note": "reproduction of originally reported 94.94% protocol (random split, writer overlap)"
+  }
+ },
+ "classifier_comparison_official_test": {
+  "rbf_svm": 0.8654,
+  "random_forest_100": 0.8084,
+  "knn5": 0.7996,
+  "logreg": 0.7785,
+  "linear_svm": 0.7544,
+  "naive_bayes": 0.4305
+ },
+ "descriptor_comparison": {
+  "test": {
+   "hog_linear_2916d": 0.9433,
+   "hybrid_hog_ktsd": 0.9495,
+   "sift_bovw_64d": 0.9157,
+   "zernike_36d": 0.8747,
+   "ktsd_29d_aug": 0.867
+  },
+  "dig": {
+   "hybrid_hog_ktsd": 0.7276,
+   "hog_linear_2916d": 0.7085,
+   "ktsd_29d_aug": 0.7011,
+   "sift_bovw_64d": 0.6747,
+   "zernike_36d": 0.5016
+  },
+  "notes": [
+   "KTSD vs HOG on dig: p=0.151 (not significant) with 1% of dimensions",
+   "KTSD vs Zernike on test: p=0.066 (not significant)",
+   "hybrid adds +0.62 test / +1.91 dig over HOG alone, p<1e-4"
+  ]
+ }
+}
