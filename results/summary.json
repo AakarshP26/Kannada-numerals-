@@ -53,5 +53,127 @@
    "KTSD vs Zernike on test: p=0.066 (not significant)",
    "hybrid adds +0.62 test / +1.91 dig over HOG alone, p<1e-4"
   ]
+ },
+ "cv_5fold_official_train": {
+  "mean": 0.9402,
+  "std": 0.0015,
+  "note": "writer-overlapping folds; gap vs writer-disjoint test quantifies writer generalization"
+ },
+ "ablation_20k": {
+  "all": {
+   "n_features": 29,
+   "test_acc": 0.8366
+  },
+  "drop_loop": {
+   "n_features": 21,
+   "test_acc": 0.8334
+  },
+  "drop_endpoint": {
+   "n_features": 24,
+   "test_acc": 0.7355
+  },
+  "drop_junction": {
+   "n_features": 26,
+   "test_acc": 0.8189
+  },
+  "drop_direction_histogram": {
+   "n_features": 21,
+   "test_acc": 0.8136
+  },
+  "drop_stroke_statistics": {
+   "n_features": 24,
+   "test_acc": 0.8
+  },
+  "only_loop": {
+   "n_features": 8,
+   "test_acc": 0.2645
+  },
+  "only_endpoint": {
+   "n_features": 5,
+   "test_acc": 0.5445
+  },
+  "only_junction": {
+   "n_features": 3,
+   "test_acc": 0.4382
+  },
+  "only_direction_histogram": {
+   "n_features": 8,
+   "test_acc": 0.4164
+  },
+  "only_stroke_statistics": {
+   "n_features": 5,
+   "test_acc": 0.45
+  }
+ },
+ "latency": {
+  "cpu": "aarch64",
+  "platform": "Linux-6.8.0-124-generic-aarch64-with-glibc2.35",
+  "n": 300,
+  "feature_ms": {
+   "mean": 1.0390934733671504,
+   "std": 1.0386661761985172,
+   "p95": 1.1886583486557356
+  },
+  "svm_ms": {
+   "mean": 1.19640887331722,
+   "std": 0.08162903237631698,
+   "p95": 1.2854023990257701
+  },
+  "total_ms": {
+   "mean": 2.2355023466843704,
+   "std": 1.1016964620457959,
+   "p50": 2.1436249999169377,
+   "p95": 2.440195850795135,
+   "p99": 2.7153712503604757
+  },
+  "model_size_kb": 4706
+ },
+ "loop_justification": {
+  "n": 5000,
+  "agree": 0.203,
+  "cycles_gt_holes": 0.797,
+  "holes_gt_cycles": 0.0,
+  "per_digit": {
+   "0": {
+    "holes": 0.544,
+    "cycles": 1.918
+   },
+   "1": {
+    "holes": 0.0,
+    "cycles": 0.824
+   },
+   "2": {
+    "holes": 0.558,
+    "cycles": 2.74
+   },
+   "3": {
+    "holes": 0.684,
+    "cycles": 5.036
+   },
+   "4": {
+    "holes": 0.754,
+    "cycles": 5.99
+   },
+   "5": {
+    "holes": 0.824,
+    "cycles": 9.306
+   },
+   "6": {
+    "holes": 0.016,
+    "cycles": 2.112
+   },
+   "7": {
+    "holes": 0.13,
+    "cycles": 2.126
+   },
+   "8": {
+    "holes": 0.25,
+    "cycles": 3.56
+   },
+   "9": {
+    "holes": 0.016,
+    "cycles": 1.99
+   }
+  }
  }
 }

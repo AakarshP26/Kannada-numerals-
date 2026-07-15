@@ -1,0 +1,48 @@
+{
+ "n": 5000,
+ "agree": 0.203,
+ "cycles_gt_holes": 0.797,
+ "holes_gt_cycles": 0.0,
+ "per_digit": {
+  "0": {
+   "holes": 0.544,
+   "cycles": 1.918
+  },
+  "1": {
+   "holes": 0.0,
+   "cycles": 0.824
+  },
+  "2": {
+   "holes": 0.558,
+   "cycles": 2.74
+  },
+  "3": {
+   "holes": 0.684,
+   "cycles": 5.036
+  },
+  "4": {
+   "holes": 0.754,
+   "cycles": 5.99
+  },
+  "5": {
+   "holes": 0.824,
+   "cycles": 9.306
+  },
+  "6": {
+   "holes": 0.016,
+   "cycles": 2.112
+  },
+  "7": {
+   "holes": 0.13,
+   "cycles": 2.126
+  },
+  "8": {
+   "holes": 0.25,
+   "cycles": 3.56
+  },
+  "9": {
+   "holes": 0.016,
+   "cycles": 1.99
+  }
+ }
+}
