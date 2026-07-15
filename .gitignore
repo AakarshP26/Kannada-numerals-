@@ -1,0 +1,34 @@
+# Data (downloaded via scripts/download_data.py — see README)
+data/
+*.csv
+*.npz
+*.npy
+
+# Models and large artifacts
+models/
+*.pkl
+*.joblib
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Manuscript working files (not part of the public code release)
+paper/
+*.docx
+*.pdf
+
+# Scratch
+*.log
+tmp/
+analysis/outputs*/
