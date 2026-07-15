@@ -1,0 +1,46 @@
+{
+ "all": {
+  "n_features": 29,
+  "test_acc": 0.8366
+ },
+ "drop_loop": {
+  "n_features": 21,
+  "test_acc": 0.8334
+ },
+ "drop_endpoint": {
+  "n_features": 24,
+  "test_acc": 0.7355
+ },
+ "drop_junction": {
+  "n_features": 26,
+  "test_acc": 0.8189
+ },
+ "drop_direction_histogram": {
+  "n_features": 21,
+  "test_acc": 0.8136
+ },
+ "drop_stroke_statistics": {
+  "n_features": 24,
+  "test_acc": 0.8
+ },
+ "only_loop": {
+  "n_features": 8,
+  "test_acc": 0.2645
+ },
+ "only_endpoint": {
+  "n_features": 5,
+  "test_acc": 0.5445
+ },
+ "only_junction": {
+  "n_features": 3,
+  "test_acc": 0.4382
+ },
+ "only_direction_histogram": {
+  "n_features": 8,
+  "test_acc": 0.4164
+ },
+ "only_stroke_statistics": {
+  "n_features": 5,
+  "test_acc": 0.45
+ }
+}
